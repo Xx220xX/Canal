@@ -17,6 +17,7 @@
 ###### Gerar potencias de 2
 > se um numero for maior igual  que 2^8 entao deve-se fazer 256 xor 285
 >2^9 = 2^8*2 = 2^8 xor 285 * 2 = 29*2=58
+C:
 ```C
 unsigned int galoi(unsigned int numero) {
     unsigned int a;
@@ -31,6 +32,7 @@ unsigned int galoi(unsigned int numero) {
     return numero;
 }
 ```
+Python:
 ```Python
 def galoi(numero):
     if numero >= 256 and (numero ^ 285) < 256:
@@ -43,6 +45,7 @@ def galoi(numero):
     return numero
 
 ```
+LUA:
 ```lua
 function galoi(numero) 
     if numero >= 256 and (numero ~ 285) < 256 then
@@ -59,6 +62,7 @@ function galoi(numero)
 end
 
 ```
+Java:
 ```Java
 public static int galoi(int numero){
         int a;
@@ -73,7 +77,8 @@ public static int galoi(int numero){
         return numero;
     }
 ```
-```java-script
+javascript:
+```javascript
 function galoi(numero) {
     if (numero >= 256 && (numero ^ 285) < 256 ){
         return numero ^ 285;
