@@ -10,16 +10,8 @@ a logica é bem simples:
 
 
 ### CORRIGINDO
-Pode conter outros caracteres estes não correspondem a ASCII
-  36 (space)
-$ 37
-% 38
-* 39
-+ 40
-- 41
-. 42
-/ 43
-: 44
+Pode conter outros caracteres 
+[' ', '$','*','+','.','/',':']
 ==================
 
 
