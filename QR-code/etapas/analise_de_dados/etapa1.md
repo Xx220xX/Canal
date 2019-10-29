@@ -1,14 +1,13 @@
 # :D
 Nesta estapa deve-se verificar em qual modo iremos codificar nossa mensagem
 a logica é bem simples:
-<p align="center">
-	iniciar o modo como NUMERICO
-	Percorrer a mensagem inteira
-	Se encontrar uma numero - não fazer nada.
-	Se encontrar uma letra maiuscula - mudar para modo ALPHANUMERICO
-	Caso as consdições acima nao forem satisfeitas - mudar para modo BYTE e parar a busca.
+<p  align="justify" > iniciar o modo como <b>NUMERICO</b></p>
+<p  align="justify">Percorrer a mensagem inteira</p>
+<p  align="justify">Se encontrar uma numero - não fazer nada.</p>
+<p  align="justify">Se encontrar uma letra maiuscula - mudar para modo <b>ALPHANUMERICO</b></p>
+<p  align="justify">Caso as consdições acima nao forem satisfeitas - mudar para modo <b>BYTE</b> e parar a busca.</p>
 
-</p>
+
 
 
 # linguagem C
