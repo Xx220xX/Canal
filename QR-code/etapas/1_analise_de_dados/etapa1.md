@@ -11,6 +11,7 @@ a logica é bem simples:
 
 ### CORRIGINDO
 Pode conter outros caracteres 
+
 [' ', '$','*','+','.','/',':']
 ==================
 
