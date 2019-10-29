@@ -1,31 +1,28 @@
-NUMERICO = 1
-ALPHANUMERICO = 2
-BYTE = 3
+NUMERICO = 'Numerico'
+ALPHANUMERICO = 'ALPHANUMERICO'
+BYTE = 'BYTE'
+
+import re
 
 
-class QR_CODE:
+class QR:
     def __init__(self, msg):
         self.msg = msg
 
-    # etapa 1-7 analise de dados
-    def analise(self):
-        self.codificao = NUMERICO
-        for c in self.msg:
+        # etapa 1-7 analise de dados
 
+    def analise(self):
+        self.modo_codificao = NUMERICO
+        for c in self.msg:
             if c.isdigit():
                 continue
-            if c.isalnum() and c.isupper():
-                print(c)
-                self.codificao = ALPHANUMERICO
+            if 'A' <= c <= 'Z':
+                self.modo_codificao = ALPHANUMERICO
                 continue
-            self.codificao = BYTE
+            self.modo_codificao = BYTE
             break
+        print(self.modo_codificao)
 
 
-        if self.codificao == NUMERICO:
-            print('NUMERICO')
-        elif self.codificao == ALPHANUMERICO:
-            print('ALPHANUMERICO')
-        else:
-            print('BYTE')
-
+a = QR('OLÁ')
+a.analise()
