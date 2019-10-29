@@ -1,6 +1,6 @@
 # QR Code
 > Para fazer um Qr code deve seguir algumas etapas
- 1. [x] [analisar os  dados](etapas/analise_de_dados/etapa1.md)
+ 1. [x] [analisar os  dados](etapas/1_analise_de_dados/etapa1.md)
  2. [ ] codificacao de dados
  3. [ ] correcao de erros
  4. [ ] estrutura de dados
