@@ -1,15 +1,29 @@
-# Existem 4 tipos de modo de correcao
- 1. L (low)  7% 
- 2. M (medim) 15%
- 3. Q (Quartile) 25%  
- 4. H (Hight) 30%
+# Existe 40 versoes diferentes do qr code :/.
+
+*E AGORA? QUAL DEVO USAR?*
+
+ 
+ <p align="justify">
+ 	Para definir a versão a ser usada existe uma [tabela](https://www.thonky.com/qr-code-tutorial/character-capacities) que é enorme :/
+ 	mas nosso programa fara isso de forma automatizada. Para isso separaremos as tabelas em 4 arquivos
+ 	correspondentes aos modos L, M, Q e H. cada linha tera 4 numeros , para modos Numerico, Alphanumerico,byte e kanji(ele nao faz mal para ninguém, deixa ele ue :D , mentira da trabalho tirar). e cada linha corresponde a versão usada (sao 40 linhas hehe).
+</p>
+
 
  <p align="justify">
- 	Para este QR tentaremos codificar no maior modo.
- 	Para isso usaremos a recursão para caso falhe com o modo H 
- 	tente novamente com o modo Q e caso falhe com L retorna um erro.
+ 	O algoritimo é simples:
  </p>
-
+ <p align="justify">
+ 	abrir arquivo txt de acordo com o modo de correcao
+ 	<p></p>
+ 	ler um linha 
+ 	<p></p>
+ 	verificar se para o modo de codifição tal versão for maior ou igual que a quantidade de caracteres da sua mensagem
+ 	<p></p>
+ 	salvar valor encontrado
+ 	<p></p>
+ 	caso de erro retornar um erro
+</p>
 
 
 
