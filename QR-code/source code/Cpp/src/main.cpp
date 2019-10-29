@@ -20,7 +20,7 @@ public:
         for (const char *c = msg.c_str(); *c; c += 1) {
             if (isdigit(*c))
                 continue;
-            if (isupper(*c)) {
+            if (isupper(*c)|| (*c>=36 && *c<= 44){
                 modo_codificacao = ALPHANUMERICO;
                 continue;
             }

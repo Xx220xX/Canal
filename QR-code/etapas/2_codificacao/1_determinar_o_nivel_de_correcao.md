@@ -93,9 +93,23 @@ end
 ```
 # linguagem Java
 ```Java
-public void codificar(){
-   
-}
+  public void codificar() throws QR_exception {
+        try {
+            determinarMenorVersao();
+//            identicador_de_modo();
+//            contagem_de_caracteres();
+//            codificarDados();
+//            dividir_em_blocos();
+
+        } catch (QR_exception.MODO_CORRECAO e) {
+            if (tentar_todos_modos_de_correcao && modo_correcao > MODO_CORRECAO.L) {
+                modo_correcao--;
+                codificar();
+                return;
+            }
+            throw new QR_exception("mensagem não suportada");
+        }
+    }
 ```
 # linguagem JavaScript
 ```javaScript

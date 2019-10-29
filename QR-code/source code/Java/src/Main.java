@@ -3,5 +3,6 @@ public class Main {
         QR qr = new QR("ANFJ494AF");
         qr.analise();
         qr.codificar();
+        System.out.println(qr);
     }
 }
