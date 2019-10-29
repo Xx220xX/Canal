@@ -4,7 +4,7 @@
 
  
  <p align="justify">
- 	Para definir a versão a ser usada existe uma [tabela](https://www.thonky.com/qr-code-tutorial/character-capacities) que é enorme :/
+ 	Para definir a versão a ser usada existe uma [tabela]< a href = "https://www.thonky.com/qr-code-tutorial/character-capacities"></p> que é enorme :/
  	mas nosso programa fara isso de forma automatizada. Para isso separaremos as tabelas em 4 arquivos
  	correspondentes aos modos L, M, Q e H. cada linha tera 4 numeros , para modos Numerico, Alphanumerico,byte e kanji(ele nao faz mal para ninguém, deixa ele ue :D , mentira da trabalho tirar). e cada linha corresponde a versão usada (sao 40 linhas hehe).
 </p>
