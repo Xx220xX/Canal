@@ -1,16 +1,10 @@
 # QR Code
 > Para fazer um Qr code deve seguir algumas etapas
- 1. [x] [analisar os  dados](etapas/analise_de_dados/etapa1.md)
- 2. [ ] codificacao de dados
+ 1. [x] [analisar os  dados](etapas/analise_de_dados/etapa1.md) [_(thonky)_](https://www.thonky.com/qr-code-tutorial/data-analysis) 
+ 2. [ ] codificacao de dados [_(thonky)_](https://www.thonky.com/qr-code-tutorial/data-encoding)
  3. [ ] correcao de erros
  4. [ ] estrutura de dados
  5. [ ] Colocar dados na matriz
  6. [ ] Mascaramento de dados
  7. [ ] informação de formato e  versao
 
-
-
-
-
-<<<<<<< HEAD
-=======
