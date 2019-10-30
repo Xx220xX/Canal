@@ -72,7 +72,7 @@ def codificar(self):
 # linguagem Lua \0/
 ```lua
 function QR:codificar()
-    local function _codifcar()
+    local function _try_codifcar()
        --print('tentando com', self.modo_correcao)
         a = 1/0
         self.determinarMenorVersao()
@@ -81,12 +81,12 @@ function QR:codificar()
         self.codificarDados()
         self.dividir_em_blocos()
     end
-    :: catch ::
-    local status , err = pcall(_codifcar)
+    :: try ::
+    local status , err = pcall(_try_codifcar)
     if not status then
         if self.tentar_todos_modos_de_correcao and self.modo_correcao > L then
             self.modo_correcao = self.modo_correcao - 1
-            goto catch
+            goto try
         else
             error("mensagem nao suportada\n"..err )
         end
