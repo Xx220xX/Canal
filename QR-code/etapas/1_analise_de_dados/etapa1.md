@@ -6,27 +6,12 @@ a logica é bem simples:
 <p  align="justify">Se encontrar uma numero - não fazer nada.</p>
 <p  align="justify">Se encontrar uma letra maiuscula ou um caractere especial {' ', '$','*','+','.','/',':'} - mudar para modo <b>ALPHANUMERICO</b></p>
 <p  align="justify">Caso as consdições acima nao forem satisfeitas - mudar para modo <b>BYTE</b> e parar a busca.</p>
-=============================
 
 
-### CORRIGINDO
-<<<<<<< HEAD
-Pode conter outros caracteres estes não correspondem a ASCII
-   (space)
-$ 
-% 
-* 
-+ 
-- 
-. 
-/ 
-: 
-=======
-Pode conter outros caracteres 
+---------------------------------------------
 
-[' ', '$','*','+','.','/',':']
->>>>>>> 29ea19db3e3a3e8b3264f21a0e2417bfa985fbec
-==================
+
+
 
 
 
