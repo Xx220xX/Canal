@@ -4,7 +4,7 @@ a logica é bem simples:
 <p  align="justify" > iniciar o modo como <b>NUMERICO</b></p>
 <p  align="justify">Percorrer a mensagem inteira</p>
 <p  align="justify">Se encontrar uma numero - não fazer nada.</p>
-<p  align="justify">Se encontrar uma letra maiuscula - mudar para modo <b>ALPHANUMERICO</b></p>
+<p  align="justify">Se encontrar uma letra maiuscula ou um caractere especial {' ', '$','*','+','.','/',':'} - mudar para modo <b>ALPHANUMERICO</b></p>
 <p  align="justify">Caso as consdições acima nao forem satisfeitas - mudar para modo <b>BYTE</b> e parar a busca.</p>
 =============================
 
