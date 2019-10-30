@@ -1,8 +1,7 @@
 public class Main {
-    public static void main(String[] args) throws QR.QR_exception {
+    public static void main(String[] args)  {
         QR qr = new QR("ANFJ494AF");
         qr.analise();
-        qr.codificar();
-        System.out.println(qr);
+
     }
 }

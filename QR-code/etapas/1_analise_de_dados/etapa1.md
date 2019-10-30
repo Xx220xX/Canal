@@ -11,15 +11,15 @@ a logica é bem simples:
 
 ### CORRIGINDO
 Pode conter outros caracteres estes não correspondem a ASCII
-  36 (space)
-$ 37
-% 38
-* 39
-+ 40
-- 41
-. 42
-/ 43
-: 44
+   (space)
+$ 
+% 
+* 
++ 
+- 
+. 
+/ 
+: 
 ==================
 
 
@@ -32,7 +32,7 @@ void analise(QR &qr) {
     for (c = qr->msg; *c; c += 1) {
         if (isdigit(*c))
             continue;
-        if (isupper(*c)|| *c = ' '|| *c == '$' || *c == '*'|| *c=='+'||*c == '.' ||*c=='/'||*c==':') {
+        if (isupper(*c)|| *c == ' '|| *c == '$' || *c == '*'|| *c=='+'||*c == '.' ||*c=='/'||*c==':') {
             qr->modo_codificacao = ALPHANUMERICO;
             continue;
         }
@@ -48,7 +48,7 @@ void analise() {
     for (const char *c = msg.c_str(); *c; c += 1) {
         if (isdigit(*c))
         	continue;
-        if (isupper(*c)|| *c = ' '|| *c == '$' || *c == '*'|| *c=='+'||*c == '.' ||*c=='/'||*c==':') {
+        if (isupper(*c)|| *c == ' '|| *c == '$' || *c == '*'|| *c=='+'||*c == '.' ||*c=='/'||*c==':') {
         	modo_codificacao = ALPHANUMERICO;
             continue;
         }
@@ -92,34 +92,35 @@ end
 # linguagem Java
 ```Java
 public void analise(){
-	char caracteres[] = new char[]{' ', '$','*','+','.','/',':'};
+    List<Character>caracteres = Arrays.asList(' ', '$', '*', '+', '.', '/', ':');
     for(char c:msg.toCharArray()){
         if(Character.isDigit(c))
             continue;
         if(Character.isAlphabetic(c) && Character.isUpperCase(c) || caracteres.contains(c)){
             modo_codificacao = MODO_CODIFICACAO.ALPHANUMERICO;
-        	continue;
+            continue;
         }
         modo_codificacao = MODO_CODIFICACAO.BYTE;
-    	break;
+        break;
     }
 }
 ```
 # linguagem JavaScript
 ```javaScript
 analise(){
-    this.modo_codificacao = NUMERICO;
-    let c ;
-    for (let i = 0;i<this.msg.length;i++){
-        c = this.msg.charCodeAt(i);
-        if(c>= 48 && c <= 57)
-            continue;
-        if((c>=65 && c<=91)|| c = ' '|| c == '$' || c == '*'|| c=='+'||c == '.' ||c=='/'||c==':'){
-            this.modo_codificacao = ALPHANUMERICO;
-            continue;
+         this.modo_codificacao = NUMERICO;
+        let c ;
+        let especiais = Array.prototype.map.call(' $*+./:', (x)=> {return x.charCodeAt(0);});
+        for (let i = 0;i<this.msg.length;i++){
+            c = this.msg.charCodeAt(i);
+            if(c>= 48 && c <= 57)
+                continue;
+            if((c>=65 && c<=91) || especiais.includes(c)){
+                this.modo_codificacao = ALPHANUMERICO;
+                continue;
+            }
+            this.modo_codificacao = BYTE;
+            break;
         }
-        this.modo_codificacao = BYTE;
-        break;
     }
-}
 ```

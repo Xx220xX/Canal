@@ -1,3 +1,3 @@
-C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C-C++/QR_CPP/cmake-build-debug/CMakeFiles/QR_CPP.dir
-C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C-C++/QR_CPP/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C-C++/QR_CPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

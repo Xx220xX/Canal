@@ -20,7 +20,8 @@ public:
         for (const char *c = msg.c_str(); *c; c += 1) {
             if (isdigit(*c))
                 continue;
-            if (isupper(*c)|| (*c>=36 && *c<= 44){
+            if (isupper(*c) || *c == ' ' || *c == '$' || *c == '*' || *c == '+' || *c == '.' || *c == '/' ||
+                *c == ':') {
                 modo_codificacao = ALPHANUMERICO;
                 continue;
             }
@@ -31,7 +32,7 @@ public:
 };
 
 int main() {
-    QR q = QR("111Á");
+    QR q = QR("111 ");
     q.analise();
     return 0;
 }

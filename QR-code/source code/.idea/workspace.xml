@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c6580d5c-32cf-4a2d-8716-00b25e89207b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Java/out/production/java/QR$QR_exception$ModoDeCorrecaoNaoSuportado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/out/production/loca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../etapas/1_analise_de_dados/etapa1.md" beforeDir="false" afterPath="$PROJECT_DIR$/../etapas/1_analise_de_dados/etapa1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/src/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/QR_CPP.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/QR_CPP.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cpp/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cpp/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java/out/production/java/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/java/QR$MODO_CORRECAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java/out/production/java/QR$MODO_CORRECAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/java/QR$QR_exception$MODO_CORRECAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/java/QR$QR_exception.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java/out/production/java/QR$QR_exception.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/out/production/java/QR.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java/out/production/java/QR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/QR.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/QR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/src/QR.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/src/QR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lua/src/QR.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Lua/src/QR.lua" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1SvQVzpd0KSO4Eg9pBcmWlYfgEM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6580d5c-32cf-4a2d-8716-00b25e89207b" name="Default Changelist" comment="" />
+      <created>1572441630621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572441630621</updated>
+      <workItem from="1572441708884" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
