@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\PC\CLionProjects\QR_C
+"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\PC\Desktop\HEnrique\canal\QR-code\source code\C"
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/PC/CLionProjects/QR_C/cmake-build-debug
+-- Build files have been written to: C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/cmake-build-debug

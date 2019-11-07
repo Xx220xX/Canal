@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/PC/CLionProjects/QR_C/src/main.c" "C:/Users/PC/CLionProjects/QR_C/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj"
+  "C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/src/QR.c" "C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/cmake-build-debug/CMakeFiles/QR_C.dir/src/QR.c.obj"
+  "C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/src/main.c" "C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

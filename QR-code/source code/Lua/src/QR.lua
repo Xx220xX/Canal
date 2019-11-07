@@ -9,8 +9,8 @@ local H = 4
 
 local QR = {}
 QR.__index = QR
-function QR:new(msg)
-    return setmetatable({ msg = msg, modo_correcao = H, tentar_todos_modos_de_correcao = true }, self)
+function QR.new(msg)
+    return setmetatable({ msg = msg, modo_correcao = H, tentar_todos_modos_de_correcao = true }, QR)
 end
 function QR:analise()
     local c;
@@ -27,6 +27,8 @@ function QR:analise()
     end
     print(self.modo_codificacao)
 end
+
+
 function QR:codificar()
     local function _codifcar()
         --print('tentando com', self.modo_correcao)

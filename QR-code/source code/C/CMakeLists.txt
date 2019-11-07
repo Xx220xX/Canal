@@ -3,4 +3,4 @@ project(QR_C C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(QR_C src/main.c)
+add_executable(QR_C src/main.c src/QR.c src/QR.h)

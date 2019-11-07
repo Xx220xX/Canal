@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\PC\CLionProjects\QR_C
+CMAKE_SOURCE_DIR = "C:\Users\PC\Desktop\HEnrique\canal\QR-code\source code\C"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\PC\CLionProjects\QR_C\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\PC\Desktop\HEnrique\canal\QR-code\source code\C\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\CLionProjects\QR_C\cmake-build-debug\CMakeFiles C:\Users\PC\CLionProjects\QR_C\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\PC\Desktop\HEnrique\canal\QR-code\source code\C\cmake-build-debug\CMakeFiles" "C:\Users\PC\Desktop\HEnrique\canal\QR-code\source code\C\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\PC\CLionProjects\QR_C\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\PC\Desktop\HEnrique\canal\QR-code\source code\C\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ QR_C/fast:
 	$(MAKE) -f CMakeFiles\QR_C.dir\build.make CMakeFiles/QR_C.dir/build
 .PHONY : QR_C/fast
 
+src/QR.obj: src/QR.c.obj
+
+.PHONY : src/QR.obj
+
+# target to build an object file
+src/QR.c.obj:
+	$(MAKE) -f CMakeFiles\QR_C.dir\build.make CMakeFiles/QR_C.dir/src/QR.c.obj
+.PHONY : src/QR.c.obj
+
+src/QR.i: src/QR.c.i
+
+.PHONY : src/QR.i
+
+# target to preprocess a source file
+src/QR.c.i:
+	$(MAKE) -f CMakeFiles\QR_C.dir\build.make CMakeFiles/QR_C.dir/src/QR.c.i
+.PHONY : src/QR.c.i
+
+src/QR.s: src/QR.c.s
+
+.PHONY : src/QR.s
+
+# target to generate assembly for a file
+src/QR.c.s:
+	$(MAKE) -f CMakeFiles\QR_C.dir\build.make CMakeFiles/QR_C.dir/src/QR.c.s
+.PHONY : src/QR.c.s
+
 src/main.obj: src/main.c.obj
 
 .PHONY : src/main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... QR_C
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... src/QR.obj
+	@echo ... src/QR.i
+	@echo ... src/QR.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

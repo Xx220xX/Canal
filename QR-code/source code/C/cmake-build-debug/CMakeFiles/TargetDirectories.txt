@@ -1,3 +1,3 @@
-C:/Users/PC/CLionProjects/QR_C/cmake-build-debug/CMakeFiles/QR_C.dir
-C:/Users/PC/CLionProjects/QR_C/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/PC/CLionProjects/QR_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/cmake-build-debug/CMakeFiles/QR_C.dir
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/src/QR.c
+QR.h
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/src/QR.h
+
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/src/QR.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/src/main.c
+stdio.h
+-
+QR.h
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/C/src/QR.h
+
