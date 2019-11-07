@@ -17,7 +17,7 @@ a logica é bem simples:
 
 # linguagem C
 ```C
-void analise(QR &qr) {
+void analise(QR *qr) {
 	const char *c;
     qr->modo_codificacao = NUMERICO;
     for (c = qr->msg; *c; c += 1) {
