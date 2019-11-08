@@ -12,41 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ccd4ec1-9151-4d88-8e53-741df4dbe856" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QR.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QR.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/out/production/java/QR$QRException$MODO_CORRECAO_NAO_SUPORTADO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/out/production/java/QR$QRException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tabelas/L.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tabelas/Q.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/QR_C.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/QR_C.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QR.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QR.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/out/production/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/java/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/out/production/java/QR$QR_exception$ModoDeCorrecaoNaoSuportado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/out/production/java/QR$QR_exception.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/out/production/java/QR.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/java/QR.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/src/QR.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/QR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lua/src/QR.lua" beforeDir="false" afterPath="$PROJECT_DIR$/../Lua/src/QR.lua" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +89,7 @@
       <updated>1572126650217</updated>
       <workItem from="1572126651599" duration="61000" />
       <workItem from="1573086446341" duration="3969000" />
+      <workItem from="1573178064854" duration="2382000" />
     </task>
     <servers />
   </component>
@@ -129,7 +101,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

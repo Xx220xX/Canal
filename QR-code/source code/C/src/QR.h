@@ -35,7 +35,7 @@ void analise(pQR);
 
 int codificar(pQR);
 
-int determinarMenorVersao(pQR);
+void determinarMenorVersao(pQR);
 
 
 void ERROR_PRINT(int);

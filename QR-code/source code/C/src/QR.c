@@ -47,7 +47,7 @@ void QR_info(pQR q) {
             printf("M");
             break;
         case Q:
-            printf("Q");
+            printf("Q.txt");
             break;
         case H:
             printf("H");
@@ -98,12 +98,9 @@ int codificar(QR *qr) {
     return Msg_n_suport;
 }
 
-int determinarMenorVersao(pQR q) {
-    if (q->error) {
-        return q->error;
-    }
+void determinarMenorVersao(pQR q) {
 
-    return 0;
+
 }
 
 
