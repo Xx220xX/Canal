@@ -1,4 +1,6 @@
 # Existe 40 versoes diferentes do qr code :/.
+> Cada versão comporta certa quantidade de caracteres.
+> Nesta estapa deve-se escolher a menor versão para o seu qr code.
 
 *E AGORA? QUAL DEVO USAR?*
 
