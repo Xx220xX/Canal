@@ -12,12 +12,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ccd4ec1-9151-4d88-8e53-741df4dbe856" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tabelas/L.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tabelas/Q.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tabelas/versoes/H.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tabelas/versoes/L.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tabelas/versoes/M.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tabelas/versoes/Q.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/QR.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/QR.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QR.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QR.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabelas/L.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabelas/Q.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabelas/todosnumeros.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +99,7 @@
       <workItem from="1572126651599" duration="61000" />
       <workItem from="1573086446341" duration="3969000" />
       <workItem from="1573178064854" duration="2382000" />
+      <workItem from="1573262410520" duration="6856000" />
     </task>
     <servers />
   </component>

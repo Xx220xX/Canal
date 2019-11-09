@@ -17,14 +17,20 @@
 #define  Q 3
 #define  H 4
 enum {
-    Msg_n_suport = 1, nivel_n_suportado
+    Msg_n_suport = 1, nivel_n_suportado,file_not_found
 } Error;
 typedef struct {
     char *msg;
     int modo_correcao,
             tentar_todos_modos_de_correcao,
             modo_codificacao;
+
     int error;
+
+    int tamanhoMensagem;
+    int capacidadeCaracteres;
+    int versao;
+
 } QR, *pQR;
 
 QR QR_new(const char *);
