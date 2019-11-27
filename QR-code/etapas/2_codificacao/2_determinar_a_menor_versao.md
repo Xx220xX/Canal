@@ -37,29 +37,29 @@ void determinarMenorVersao(pQR q) {
     FILE *tabela = 0;
     int caracteres[4];
     int i;
-    switch (q->modo_correcao){
+    switch (q->modo_correcao) {
         case H:
-            tabela = fopen("../src/tabelas/versoes/H.txt","r");
+            tabela = fopen("../src/tabelas/versoes/H.txt", "r");
             break;
-    case Q:
-            tabela = fopen("../src/tabelas/versoes/Q.txt","r");
+        case Q:
+            tabela = fopen("../src/tabelas/versoes/Q.txt", "r");
             break;
-    case M:
-            tabela = fopen("../src/tabelas/versoes/M.txt","r");
+        case M:
+            tabela = fopen("../src/tabelas/versoes/M.txt", "r");
             break;
         case L:
-            tabela = fopen("../src/tabelas/versoes/L.txt","r");
+            tabela = fopen("../src/tabelas/versoes/L.txt", "r");
             break;
     }
-    if(!tabela){
+    if (!tabela) {
         q->error = file_not_found;
         return;
     }
-    for ( i = 0; i < 40 && !feof(tabela); ++i) {
-        fscanf(tabela,"%d %d %d %d",caracteres,caracteres+1,caracteres+2,caracteres+3);
-        if(q->tamanhoMensagem<= caracteres[q->modo_codificacao-1]){
-            q->capacidadeCaracteres = caracteres[q->modo_codificacao-1];
-            q->versao = i+1;
+    for (i = 0; i < 40 && !feof(tabela); ++i) {
+        fscanf(tabela, "%d %d %d %d", caracteres, caracteres + 1, caracteres + 2, caracteres + 3);
+        if (q->tamanhoMensagem <= caracteres[q->modo_codificacao - 1]) {
+            q->capacidadeCaracteres = caracteres[q->modo_codificacao - 1];
+            q->versao = i + 1;
             return;
         }
     }
