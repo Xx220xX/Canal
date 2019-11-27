@@ -9,3 +9,11 @@
  7. [ ] 7. informação de formato e  versao
  
 
+# source
+
+- [Qr code em C](source%20code/C/src)
+- [Qr code em C++](source%20code/Cpp/src)
+- [Qr code em Lua ](source%20code/Lua/src)
+- [Qr code em Java](source%20code/Java/src)
+- [Qr code em JavaScript](source%20code/JavaScript/src)
+- [Qr code em Python](source%20code/python/src)
