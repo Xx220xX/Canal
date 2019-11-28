@@ -68,8 +68,36 @@ void determinarMenorVersao(pQR q) {
 ```
 # linguagem C++ 
 ```Cpp
-void determinarMenorVersao() {
-	
+void QR::determinarMenorVersao() {
+    FILE *tabela = nullptr;
+    int caracteres[4];
+    switch (modo_correcao) {
+        case H:
+            tabela = fopen("../src/tabelas/versoes/H.txt", "r");
+            break;
+        case Q:
+            tabela = fopen("../srg/tabelas/versoes/Q.txt", "r");
+            break;
+        case M:
+            tabela = fopen("../src/tabelas/versoes/M.txt", "r");
+            break;
+        case L:
+            tabela = fopen("../src/tabelas/versoes/L.txt", "r");
+            break;
+    }
+    if (!tabela) {
+        error = file_not_found;
+        return;
+    }
+    for (int i = 0; i < 40 && !feof(tabela); ++i) {
+        fscanf(tabela, "%d %d %d %d", caracteres, caracteres + 1, caracteres + 2, caracteres + 3);
+        if (tamanhoMensagem <= caracteres[modo_codificacao - 1]) {
+            capacidadeCaracteres = caracteres[modo_codificacao - 1];
+            versao = i + 1;
+            return;
+        }
+    }
+    error = nivel_n_suportado;
 }
 ```
 # linguagem Python
