@@ -9,7 +9,7 @@ void ERROR_PRINT(int erro) {
         case nivel_n_suportado:
             printf("nivel nao suportado!");
             break;
-            case file_not_found:
+        case file_not_found:
             printf("Arquivo nao encontrado");
             break;
 
@@ -30,6 +30,10 @@ void QR_free(pQR q) {
 }
 
 void QR_info(pQR q) {
+    if (q->error) {
+        ERROR_PRINT(q->error);
+        return;
+    }
     printf("msg: %s\nmodo de codificacao: ", q->msg);
     switch (q->modo_codificacao) {
         case ALPHANUMERICO:
@@ -61,8 +65,9 @@ void QR_info(pQR q) {
             printf("Ainda nao definido");
     }
     printf("\n");
-    printf("Versao: %d\n",q->versao);
-    printf("capacidade de caracteres: %d\n",q->capacidadeCaracteres);
+    printf("Versao: %d\n", q->versao);
+    printf("capacidade de caracteres: %d\n", q->capacidadeCaracteres);
+    printf("quantidade de caracteres: %d\n", q->tamanhoMensagem);
 }
 
 void analise(pQR qr) {
@@ -81,23 +86,25 @@ void analise(pQR qr) {
 }
 
 int codificar(QR *qr) {
-    if (!qr->tentar_todos_modos_de_correcao) {
+    if (!qr->modo_corecao_forcado) {
         qr->modo_correcao = H;
+
     }
     while (qr->modo_correcao >= L) {
         qr->error = 0;
         determinarMenorVersao(qr);
+
 //     identicador_de_modo(qr);
 //     contagem_de_caracteres(qr);
 //     codificarDados(qr);
 //     qr->error dividir_em_blocos(qr);
         if (qr->error) {
-            if (!qr->tentar_todos_modos_de_correcao && qr->modo_correcao > L) {
+            if (!qr->modo_corecao_forcado && qr->modo_correcao > L) {
                 qr->modo_correcao--;
                 continue;
             }
             qr->modo_correcao = -1;
-            return Msg_n_suport;
+            return qr->error;
         }
         return 0;
     }
@@ -108,33 +115,35 @@ void determinarMenorVersao(pQR q) {
     FILE *tabela = 0;
     int caracteres[4];
     int i;
-    switch (q->modo_correcao){
+    switch (q->modo_correcao) {
         case H:
-            tabela = fopen("../src/tabelas/versoes/H.txt","r");
+            tabela = fopen("../src/tabelas/versoes/H.txt", "r");
             break;
-    case Q:
-            tabela = fopen("../src/tabelas/versoes/Q.txt","r");
+        case Q:
+            tabela = fopen("../src/tabelas/versoes/Q.txt", "r");
             break;
-    case M:
-            tabela = fopen("../src/tabelas/versoes/M.txt","r");
+        case M:
+            tabela = fopen("../src/tabelas/versoes/M.txt", "r");
             break;
         case L:
-            tabela = fopen("../src/tabelas/versoes/L.txt","r");
+            tabela = fopen("../src/tabelas/versoes/L.txt", "r");
             break;
     }
-    if(!tabela){
+    if (!tabela) {
         q->error = file_not_found;
         return;
     }
-    for ( i = 0; i < 40 && !feof(tabela); ++i) {
-        fscanf(tabela,"%d %d %d %d",caracteres,caracteres+1,caracteres+2,caracteres+3);
-        if(q->tamanhoMensagem<= caracteres[q->modo_codificacao-1]){
-            q->capacidadeCaracteres = caracteres[q->modo_codificacao-1];
-            q->versao = i+1;
+    for (i = 0; i < 40 && !feof(tabela); ++i) {
+        fscanf(tabela, "%d %d %d %d", caracteres, caracteres + 1, caracteres + 2, caracteres + 3);
+        if (q->tamanhoMensagem <= caracteres[q->modo_codificacao - 1]) {
+            q->capacidadeCaracteres = caracteres[q->modo_codificacao - 1];
+            q->versao = i + 1;
+            fclose(tabela);
             return;
         }
     }
-    q->error = nivel_n_suportado;
+    fclose(tabela);
+    q->error = Msg_n_suport;
 }
 
 

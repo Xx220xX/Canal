@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/src/QR.cpp">
+			<Option target="QR_CPP"/>
+		</Unit>
+		<Unit filename="C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/src/QR.h">
+			<Option target="QR_CPP"/>
+		</Unit>
 		<Unit filename="C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/src/main.cpp">
 			<Option target="QR_CPP"/>
 		</Unit>

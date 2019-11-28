@@ -22,7 +22,7 @@ enum {
 typedef struct {
     char *msg;
     int modo_correcao,
-            tentar_todos_modos_de_correcao,
+            modo_corecao_forcado,
             modo_codificacao;
 
     int error;

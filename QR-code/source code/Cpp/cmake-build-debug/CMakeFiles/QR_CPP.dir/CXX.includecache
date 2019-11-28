@@ -6,9 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/src/main.cpp
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/src/QR.cpp
+QR.h
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/src/QR.h
+
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/src/QR.h
 iostream
 -
 cctype
 -
+utility
+-
+
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/src/main.cpp
+iostream
+-
+QR.h
+C:/Users/PC/Desktop/HEnrique/canal/QR-code/source code/Cpp/src/QR.h
 

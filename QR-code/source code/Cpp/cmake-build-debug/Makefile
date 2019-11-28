@@ -122,6 +122,33 @@ QR_CPP/fast:
 	$(MAKE) -f CMakeFiles\QR_CPP.dir\build.make CMakeFiles/QR_CPP.dir/build
 .PHONY : QR_CPP/fast
 
+src/QR.obj: src/QR.cpp.obj
+
+.PHONY : src/QR.obj
+
+# target to build an object file
+src/QR.cpp.obj:
+	$(MAKE) -f CMakeFiles\QR_CPP.dir\build.make CMakeFiles/QR_CPP.dir/src/QR.cpp.obj
+.PHONY : src/QR.cpp.obj
+
+src/QR.i: src/QR.cpp.i
+
+.PHONY : src/QR.i
+
+# target to preprocess a source file
+src/QR.cpp.i:
+	$(MAKE) -f CMakeFiles\QR_CPP.dir\build.make CMakeFiles/QR_CPP.dir/src/QR.cpp.i
+.PHONY : src/QR.cpp.i
+
+src/QR.s: src/QR.cpp.s
+
+.PHONY : src/QR.s
+
+# target to generate assembly for a file
+src/QR.cpp.s:
+	$(MAKE) -f CMakeFiles\QR_CPP.dir\build.make CMakeFiles/QR_CPP.dir/src/QR.cpp.s
+.PHONY : src/QR.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... QR_CPP
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... src/QR.obj
+	@echo ... src/QR.i
+	@echo ... src/QR.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
