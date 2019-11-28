@@ -102,8 +102,19 @@ void QR::determinarMenorVersao() {
 ```
 # linguagem Python
 ```Python
-def determinarMenorVersao(self):
-    
+    def determinarMenorVersao(self):
+        titulo = ['L', 'M', 'Q', 'H']
+        tabela = open(f"tabelas/versoes/{titulo[self.modo_correcao - 1]}.txt", "r", encoding='utf-8')
+
+        for i in range(40):
+            caracteres = [int(j) for j in tabela.readline().split(' ')]
+            if self.tamanho_da_mensagem <= caracteres[self.modo_codificao - 1]:
+                self.capacidadeCaracteres = caracteres[self.modo_codificao - 1]
+                self.versao = i + 1
+                tabela.close()
+                return
+        tabela.close()
+        raise QR_exception('modo nao suportado')
 ```
 # linguagem Lua \0/
 ```lua
