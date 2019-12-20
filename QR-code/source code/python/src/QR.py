@@ -39,8 +39,8 @@ class QR:
             self.modo_codificao = BYTE
             break
 
-    def codificar(self):
-        if not self.modo_correcao_forcado:
+    def codificar(self,flag = None):
+        if not self.modo_correcao_forcado and flag !='repeat':
             self.modo_correcao = H
         try:
             self.determinarMenorVersao()
@@ -51,14 +51,13 @@ class QR:
         except QR_exception as e:
             if self.modo_correcao_forcado and self.modo_correcao > L:
                 self.modo_correcao -= 1
-                self.codificar()
+                self.codificar('repeat')
                 return
             raise QR_exception("mensagem nao suportada")
 
     def determinarMenorVersao(self):
         titulo = ['L', 'M', 'Q', 'H']
         tabela = open(f"tabelas/versoes/{titulo[self.modo_correcao - 1]}.txt", "r", encoding='utf-8')
-
         for i in range(40):
             caracteres = [int(j) for j in tabela.readline().split(' ')]
             if self.tamanho_da_mensagem <= caracteres[self.modo_codificao - 1]:
