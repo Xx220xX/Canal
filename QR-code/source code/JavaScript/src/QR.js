@@ -36,11 +36,11 @@ class QR{
     }
     codificar(flag = null){
         try{
-            this.determinarMenorVersao();
-            /*# self.identicador_de_modo()
-            # self.contagem_de_caracteres()
-            # self.codificarDados()
-            # self.dividir_em_blocos()*/
+           this.determinarMenorVersao();
+            this.indicadorModo()
+          /*  this.contagem_de_caracteres()
+            this.codificarDados()
+            this.dividir_em_blocos()*/
         } catch(e) {
             if (!this.modo_correcao_forcado && this.modo_correcao > L){
                 this.modo_correcao -= 1;
@@ -60,8 +60,21 @@ class QR{
     	}
     	throw Error('mensagem muito longa');
     }
+    indicadorModo(){
+        this.strbits = dec2bin(Math.pow(2,this.modo_codificacao), 4);
+    }
+
 }
-let q = new QR('UAU7234');
+
+function dec2bin(number,bits){
+    let ans = '';
+    for(let i=0;i<bits;i++){
+        ans = number%2 +ans;
+        number = Math.floor(number/2);
+    }
+    return ans;
+}
+let q = new QR('15151');
 q.analise();
 q.codificar();
 print(q)
