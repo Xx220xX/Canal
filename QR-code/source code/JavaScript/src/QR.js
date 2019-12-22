@@ -51,9 +51,7 @@ class QR{
     	}
     }
     determinarMenorVersao(){
-    	let i=0;
-
-    	for(;i<40;i++){
+    	for(let i=0;i<40;i++){
    	    	if(this.msg.length <=tabelaVesoes[this.modo_correcao-1][i][this.modo_codificacao]){
 	    		this.capacidade = tabelaVesoes[this.modo_correcao-1][i][this.modo_codificacao];
 	    		this.versao = i+1;

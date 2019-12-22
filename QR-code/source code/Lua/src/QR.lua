@@ -61,7 +61,6 @@ function QR:determinarMenorVersao()
             self.capacidade = tabelaVesoes[self.modo_correcao][i][self.modo_codificacao]
             return
         end
-
     end
     error('nao tem nesse modo de correcao')
 end
