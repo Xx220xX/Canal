@@ -23,7 +23,7 @@ Para mudar de base utiliza-se o algoritmo da divisão. Consiste em pegar o resto
 
 ### Codigos
 C e C++
-´´´C
+```C
 void decTo(int dec, char bin[], int base, int bits) {
     bin[bits--] = 0;
     while (bits >= 0) {
@@ -35,7 +35,7 @@ void decTo(int dec, char bin[], int base, int bits) {
         remove0(bin);
     }
 }
-´´´
+```
 
 
 
