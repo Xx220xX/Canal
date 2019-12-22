@@ -32,31 +32,31 @@ void indicadorModo(QR *qr){
 ```Cpp
 
 void indicadorModo(QR *qr){
-    dec2bin(qr->bits,pow(2,qr->modo_codificacao-1),4);
+    dec2bin(qr->strbits,pow(2,qr->modo_codificacao-1),4);
 }
 ```
 # linguagem Python
 ```Python
 
 def indicadorModo(self):
-    self.bits = dec2bin(2**(self.modo_codificacao-1),4)
+    self.strbits = dec2bin(2**(self.modo_codificacao-1),4)
 
 ```
 # linguagem Lua \0/
 ```lua
 function QR:indicadorModo()
-    self.bits = dec2bin(2^(qr.modo_codificacao-1),4)
+    self.strbits = dec2bin(2^(qr.modo_codificacao-1),4)
 end
 ```
 # linguagem Java
 ```Java
 private void indicadorModo(){
-    this.bits = dec2bin(Math.pow(2,modo_codificacao-1),4);
+    this.strbits = dec2bin(Math.pow(2,modo_codificacao-1),4);
 }
 ```
 # linguagem JavaScript
 ```javaScript
 indicadorModo(){
-    this.bits = dec2bin(Math.pow(2,this.modo_codificacao -1),4)
+    this.strbits = dec2bin(Math.pow(2,this.modo_codificacao -1),4)
 }
 ```
