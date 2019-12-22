@@ -58,7 +58,6 @@ class QR{
 	    		return;
 	    	}
     	}
-
     	throw Error('mensagem muito longa');
     }
 }
