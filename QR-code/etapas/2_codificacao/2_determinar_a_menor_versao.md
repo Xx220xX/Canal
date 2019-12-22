@@ -17,19 +17,22 @@
  <p align="justify">
  	O algoritimo é simples:
  </p>
- <p align="justify">
+ 
+ ```python
  	abrir arquivo txt de acordo com o modo de correcao
- 	<p></p>
  	ler um linha 
- 	<p></p>
  	verificar se para o modo de codifição tal versão for maior ou igual que a quantidade de caracteres da sua mensagem
- 	<p></p>
  	salvar valor encontrado
- 	<p></p>
  	caso de erro retornar um erro
-</p>
+```
 
-
+Opção alternativa
+```python
+	percorrer tabela 
+	verificar se o tamanho da mensagem é menor ou igual
+	caso encontrar salve a versao e a capacidade
+	caso contrario retorna erro
+```
 
 # linguagem C
 ```C
