@@ -119,18 +119,39 @@ void QR::determinarMenorVersao() {
 # linguagem Lua \0/
 ```lua
 function QR:determinarMenorVersao()
-    
+    for i=1,#tabelaVesoes do
+        if #self.msg<=tabelaVesoes[self.modo_correcao][i][self.modo_codificacao] then
+            self.versao = i
+            self.capacidade = tabelaVesoes[self.modo_correcao][i][self.modo_codificacao]
+            return
+        end
+    end
+    error('nao tem nesse modo de correcao')
 end
 ```
 # linguagem Java
 ```Java
-public void determinarMenorVersao(){
-   
-}
+private void determinarMenorVersao() throws QRException.MODO_CORRECAO_NAO_SUPORTADO {
+        for (int i = 0; i < 40; i++) {
+            if (this.tamanho_da_mensagem <= Tabela.versoes[this.modoCorrecao-1][i][this.modo_codificacao]){
+                this.versao = i+1;
+                this.capacidade = Tabela.versoes[this.modoCorrecao-1][i][this.modo_codificacao];
+                return;
+            }
+        }
+        throw new QRException.MODO_CORRECAO_NAO_SUPORTADO("erro forcado");
+    }
 ```
 # linguagem JavaScript
 ```javaScript
 determinarMenorVersao(){
-  
-}
+    	for(let i=0;i<40;i++){
+   	    	if(this.msg.length <=tabelaVesoes[this.modo_correcao-1][i][this.modo_codificacao]){
+	    		this.capacidade = tabelaVesoes[this.modo_correcao-1][i][this.modo_codificacao];
+	    		this.versao = i+1;
+	    		return;
+	    	}
+    	}
+    	throw Error('mensagem muito longa');
+    }
 ```
