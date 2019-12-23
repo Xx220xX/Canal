@@ -3,5 +3,5 @@
 - [x] [Determinar a menor versão para os dados](2_determinar_a_menor_versao.md) [[you tube]](https://youtu.be/kWZuTy0OIEE)
 - [x] [Indicador de Modo](3_indicador_de_modo.md)[[you tube]](https://youtu.be/WEVxzWc5WH0)
 - [x] [Contagem de caracteres](4_contagem_de_caracteres.md)
-- [ ] Codificar 
+- [ ] [Codificar](5_codificar.md)
 - [ ] Dividir palavras e em blocos se necessario
