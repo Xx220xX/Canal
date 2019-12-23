@@ -37,9 +37,8 @@ void QR::indicadorModo(){
 ```
 # linguagem Python
 ```Python
-
-def indicadorModo(self):
-    self.strbits = dec2bin(2**(self.modo_codificacao-1),4)
+  def indicadorModo(self):
+        self.strbits = dec2bin(2 ** (self.modo_codificao - 1), 4)
 
 ```
 # linguagem Lua \0/
