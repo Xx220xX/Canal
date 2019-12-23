@@ -1,5 +1,5 @@
 from QR import *
-a = QR('111')
+a = QR('LOL A')
 a.analise()
 a.codificar()
 print(a)

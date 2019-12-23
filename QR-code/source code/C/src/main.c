@@ -2,7 +2,6 @@
 #include "QR.h"
 
 int main() {
-    int erro=0;
     QR qr = QR_new("111");
     pQR p_qr = &qr;
 
@@ -10,7 +9,7 @@ int main() {
     codificar(p_qr);
 
     QR_info(p_qr);
-
     QR_free(p_qr);
+
     return 0;
 }

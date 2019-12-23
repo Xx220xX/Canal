@@ -1,5 +1,5 @@
 #include "QR.h"
-
+#include <math.h>
 
 void ERROR_PRINT(int erro) {
     switch (erro) {
@@ -26,7 +26,10 @@ QR QR_new(const char *msg) {
 }
 
 void QR_free(pQR q) {
-    free(q->msg);
+    if (q->msg)
+        free(q->msg);
+    if (q->strbits)
+        free(q->strbits);
 }
 
 void QR_info(pQR q) {
@@ -68,6 +71,8 @@ void QR_info(pQR q) {
     printf("Versao: %d\n", q->versao);
     printf("capacidade de caracteres: %d\n", q->capacidadeCaracteres);
     printf("quantidade de caracteres: %d\n", q->tamanhoMensagem);
+    printf("str bits: %s\n", q->strbits);
+
 }
 
 void analise(pQR qr) {
@@ -93,8 +98,7 @@ int codificar(QR *qr) {
     while (qr->modo_correcao >= L) {
         qr->error = 0;
         determinarMenorVersao(qr);
-
-//     identicador_de_modo(qr);
+        indicadorModo(qr);
 //     contagem_de_caracteres(qr);
 //     codificarDados(qr);
 //     qr->error dividir_em_blocos(qr);
@@ -146,4 +150,17 @@ void determinarMenorVersao(pQR q) {
     q->error = Msg_n_suport;
 }
 
+void indicadorModo(pQR qr) {
+    qr->strbits = (char *)realloc(qr->strbits, 5);
+    qr->size_strbits = 5;
+    dec2bin(qr->strbits, pow(2, qr->modo_codificacao - 1), 4);
+}
 
+
+void dec2bin(char *buff, int number, int bits) {
+    buff[bits--] = 0;
+    for (; bits >= 0; bits--) {
+        buff[bits] = number % 2 + '0';
+        number = number / 2;
+    }
+}

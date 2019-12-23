@@ -17,17 +17,17 @@
 #define  Q 3
 #define  H 4
 enum {
-    Msg_n_suport = 1, nivel_n_suportado,file_not_found
+    Msg_n_suport = 1, nivel_n_suportado, file_not_found
 } Error;
 typedef struct {
-    char *msg;
+    char *msg, *strbits;
     int modo_correcao,
             modo_corecao_forcado,
             modo_codificacao;
 
     int error;
 
-    int tamanhoMensagem;
+    int tamanhoMensagem, size_strbits;
     int capacidadeCaracteres;
     int versao;
 
@@ -43,7 +43,12 @@ int codificar(pQR);
 
 void determinarMenorVersao(pQR);
 
+void indicadorModo(pQR);
 
 void ERROR_PRINT(int);
+
 void QR_info(pQR);
+
+void dec2bin(char *, int, int);
+
 #endif //QR_C_QR_H

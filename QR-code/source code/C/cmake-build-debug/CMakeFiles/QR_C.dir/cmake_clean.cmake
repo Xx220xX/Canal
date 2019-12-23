@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/QR_C.dir/src/main.c.obj"
   "CMakeFiles/QR_C.dir/src/QR.c.obj"
-  "QR_C.pdb"
+  "CMakeFiles/QR_C.dir/src/main.c.obj"
   "QR_C.exe"
   "QR_C.exe.manifest"
+  "QR_C.pdb"
   "libQR_C.dll.a"
 )
 

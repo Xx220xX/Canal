@@ -12,6 +12,14 @@ class QR_exception(Exception):
         super().__init__(*args)
 
 
+def dec2bin(number, bits):
+    ans = ''
+    for i in range(bits):
+        ans = str(number % 2) + ans
+        number = number // 2
+    return ans
+
+
 class QR:
     def __init__(self, msg, forcar_modo_de_correcao=False):
         self.capacidadeCaracteres = None
@@ -33,18 +41,18 @@ class QR:
         for c in self.msg:
             if c.isdigit():
                 continue
-            if 'A' <= c <= 'Z':
+            if 'A' <= c <= 'Z' or c in [' ','$','*','+','.','/']:
                 self.modo_codificao = ALPHANUMERICO
                 continue
             self.modo_codificao = BYTE
             break
 
-    def codificar(self,flag = None):
-        if not self.modo_correcao_forcado and flag !='repeat':
+    def codificar(self, flag=None):
+        if not self.modo_correcao_forcado and flag != 'repeat':
             self.modo_correcao = H
         try:
             self.determinarMenorVersao()
-            # self.identicador_de_modo()
+            self.indicadorModo()
             # self.contagem_de_caracteres()
             # self.codificarDados()
             # self.dividir_em_blocos()
@@ -68,4 +76,5 @@ class QR:
         tabela.close()
         raise QR_exception('modo nao suportado')
 
-
+    def indicadorModo(self):
+        self.strbits = dec2bin(2 ** (self.modo_codificao - 1), 4)

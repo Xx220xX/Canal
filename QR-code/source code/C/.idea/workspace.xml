@@ -12,53 +12,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ccd4ec1-9151-4d88-8e53-741df4dbe856" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tmp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cpp/src/QR.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cpp/src/QR.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cpp/src/tabelas/versoes/H.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cpp/src/tabelas/versoes/L.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cpp/src/tabelas/versoes/M.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cpp/src/tabelas/versoes/Q.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python/src/QR.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python/src/tabelas/versoes/H.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python/src/tabelas/versoes/L.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python/src/tabelas/versoes/M.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python/src/tabelas/versoes/Q.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/QR.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/QR.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QR.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QR.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/src/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/QR_CPP.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/QR_CPP.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cpp/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/.idea/python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/src/op.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/src/sistema Trifasico.py" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +62,11 @@
   </component>
   <component name="ProjectId" id="1Sl8748BhvPhtVAFnmdamYHwAZK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -101,24 +81,24 @@
       <recent name="C:\Users\PC\CLionProjects\QR_C\src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="QR_C" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="QR_C" TARGET_NAME="QR_C" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="QR_C" RUN_TARGET_NAME="QR_C">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -136,6 +116,7 @@
       <workItem from="1573262410520" duration="7236000" />
       <workItem from="1573523057162" duration="5061000" />
       <workItem from="1574897847021" duration="5392000" />
+      <workItem from="1577058093661" duration="2280000" />
     </task>
     <servers />
   </component>
@@ -154,5 +135,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1328" height="258" key="GridCell.Tab.0.bottom" timestamp="1577060405439">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1328" height="258" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1577060405439" />
+    <state width="1328" height="258" key="GridCell.Tab.0.center" timestamp="1577060405439">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1328" height="258" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1577060405439" />
+    <state width="1328" height="258" key="GridCell.Tab.0.left" timestamp="1577060405439">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1328" height="258" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1577060405439" />
+    <state width="1328" height="258" key="GridCell.Tab.0.right" timestamp="1577060405439">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="1328" height="258" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1577060405439" />
   </component>
 </project>

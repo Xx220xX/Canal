@@ -1,4 +1,5 @@
 #include "QR.h"
+#include <cmath>
 
 #define NUMERICO 1
 #define ALPHANUMERICO 2
@@ -36,7 +37,7 @@ void QR::codificar() {
     while (this->modo_correcao >= L) {
         this->error = 0;
         determinarMenorVersao();
-//     identicador_de_modo();
+        indicadorModo();
 //     contagem_de_caracteres();
 //     codificarDados();
 //     this->error dividir_em_blocos();
@@ -87,6 +88,19 @@ void QR::determinarMenorVersao() {
     error = nivel_n_suportado;
 }
 
+string dec2bin(int number, int bits) {
+    string ans = "";
+    for (; bits > 0; bits--) {
+        ans = to_string(number % 2) + ans;
+        number = number / 2;
+    }
+    return ans;
+}
+
+void QR::indicadorModo() {
+    strbits = dec2bin(pow(2, modo_codificacao), 4);
+}
+
 std::ostream &operator<<(std::ostream &os, QR &v) {
     if (v.error) {
         os << "erro: " << err2str(v.error);
@@ -97,7 +111,8 @@ std::ostream &operator<<(std::ostream &os, QR &v) {
        "\nModo de correcao: " << v.modo_correcao <<
        "\nVersao: " << v.versao <<
        "\nTamanho da msg: " << v.tamanhoMensagem <<
-       "\ncapacidade de caracteres: " << v.capacidadeCaracteres;
+       "\ncapacidade de caracteres: " << v.capacidadeCaracteres <<
+       "\nStr bits : " << v.strbits;
     return os;
 }
 

@@ -11,10 +11,9 @@
 
 using namespace std;
 
-
 class QR{
 public:
-    string msg= "";
+    string msg= "",strbits="";
     int modo_codificacao=0;
 
     explicit QR(string msg) {
@@ -31,6 +30,7 @@ public:
     int versao=0;
 
     void determinarMenorVersao();
+    void indicadorModo();
     friend std::ostream &operator<<(std::ostream &os, QR &v);
 };
 #endif //QR_CPP_QR_H

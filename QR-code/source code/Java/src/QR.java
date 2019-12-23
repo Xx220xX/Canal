@@ -15,7 +15,7 @@ public class QR {
     }
 
 
-    private String msg;
+    private String msg,strbits;
     private int modo_codificacao = MODO_CODIFICACAO.NUMERICO;
     private int tamanho_da_mensagem;
 
@@ -33,6 +33,20 @@ public class QR {
     public QR(String msg) {
         this.msg = msg;
         this.tamanho_da_mensagem= msg.length();
+    }
+
+    @Override
+    public String toString() {
+        return "QR{" +
+                "msg='" + msg + "\'\n" +
+                " strbits='" + strbits + '\'' +'\n'+
+                " modo_codificacao=" + modo_codificacao +'\n'+
+                " tamanho_da_mensagem=" + tamanho_da_mensagem +'\n'+
+                " modoCorrecao=" + modoCorrecao +'\n'+
+                " modoCorrecaoForcado=" + modoCorrecaoForcado +'\n'+
+                " versao=" + versao +'\n'+
+                " capacidade=" + capacidade +'\n'+
+                '}';
     }
 
     /**
@@ -55,13 +69,11 @@ public class QR {
     /**
      * ETAPA 2 codificacao
      */
-
     public void codificacao() throws QRException {
         try {
-            System.out.println("tentando com modo " + modoCorrecao);
             determinarMenorVersao();
-            /*colocarIndicadorDeModo();
-            contarCaracteres();
+            indicadorModo();
+            /*contarCaracteres();
             codificarDados();
             divirEmBlocos();*/
 
@@ -85,7 +97,17 @@ public class QR {
         }
         throw new QRException.MODO_CORRECAO_NAO_SUPORTADO("erro forcado");
     }
-
+    public void indicadorModo(){
+        strbits = dec2bin((int) Math.pow(2,modo_codificacao),4);
+    }
+    public String dec2bin(int number,int bits){
+        StringBuilder ans = new StringBuilder();
+        for (;bits>0;bits--){
+            ans.insert(0, number % 2);
+            number = number/2;
+        }
+        return ans.toString();
+    }
     public static class QRException extends Exception {
         public QRException(String msg) {
             super(msg);

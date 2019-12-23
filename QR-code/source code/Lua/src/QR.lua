@@ -37,8 +37,8 @@ function QR:codificar()
     local function _codifcar()
         --print('tentando com', self.modo_correcao)
         self:determinarMenorVersao()
-       --[[ self.identicador_de_modo()
-        self.contagem_de_caracteres()
+        self:indicadorModo()
+       --[[ self.contagem_de_caracteres()
         self.codificarDados()
         self.dividir_em_blocos()--]]
     end
@@ -53,7 +53,15 @@ function QR:codificar()
         end
     end
 end
-
+local function dec2bin(number,bits)
+    local ans = ''
+    number = math.floor(number)
+    for i=1,bits do
+        ans = number%2 .. ans
+        number = math.floor(number/2)
+    end
+    return ans
+end
 function QR:determinarMenorVersao()
     for i=1,#tabelaVesoes do
         if #self.msg<=tabelaVesoes[self.modo_correcao][i][self.modo_codificacao] then
@@ -64,6 +72,10 @@ function QR:determinarMenorVersao()
     end
     error('nao tem nesse modo de correcao')
 end
+function QR:indicadorModo()
+    self.strbits = dec2bin(2^(self.modo_codificacao-1),4)
+end
+
 q = QR.new('454A 5')
 q:analise()
 q:codificar()
