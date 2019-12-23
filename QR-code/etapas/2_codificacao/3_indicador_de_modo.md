@@ -31,8 +31,8 @@ void indicadorModo(QR *qr){
 # linguagem C++ 
 ```Cpp
 
-void indicadorModo(QR *qr){
-    dec2bin(qr->strbits,pow(2,qr->modo_codificacao-1),4);
+void QR::indicadorModo(){
+    strbits = dec2bin(pow(2,qr->modo_codificacao-1),4);
 }
 ```
 # linguagem Python
@@ -45,7 +45,7 @@ def indicadorModo(self):
 # linguagem Lua \0/
 ```lua
 function QR:indicadorModo()
-    self.strbits = dec2bin(2^(qr.modo_codificacao-1),4)
+    self.strbits = dec2bin(2^(self.modo_codificacao-1),4)
 end
 ```
 # linguagem Java
