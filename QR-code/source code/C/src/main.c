@@ -2,7 +2,7 @@
 #include "QR.h"
 
 int main() {
-    QR qr = QR_new("111");
+    QR qr = QR_new("HELLO WOLRD");
     pQR p_qr = &qr;
 
     analise(p_qr);

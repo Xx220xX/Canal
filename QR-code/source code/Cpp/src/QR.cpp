@@ -9,9 +9,14 @@
 #define  M 2
 #define  Q 3
 #define  H 4
+
 enum {
     Msg_n_suport = 1, nivel_n_suportado = 2, file_not_found = 3
 };
+int tabela_quantidade_caracteres[][3] = {{10, 12, 14},
+                                         {9,  11, 13},
+                                         {8,  16, 16},
+                                         {8,  10, 12}};
 
 string err2str(int code);
 
@@ -38,7 +43,7 @@ void QR::codificar() {
         this->error = 0;
         determinarMenorVersao();
         indicadorModo();
-//     contagem_de_caracteres();
+        contagemCaracteres();
 //     codificarDados();
 //     this->error dividir_em_blocos();
         if (this->error) {
@@ -98,7 +103,16 @@ string dec2bin(int number, int bits) {
 }
 
 void QR::indicadorModo() {
-    strbits = dec2bin(pow(2, modo_codificacao), 4);
+    strbits = dec2bin(pow(2, modo_codificacao - 1), 4);
+}
+void QR::contagemCaracteres() {
+    int bits = 0;
+    if(versao >=27)
+        bits = 2;
+    else if (versao>=10)
+        bits = 1;
+    bits = tabela_quantidade_caracteres[modo_codificacao-1][bits];
+    strbits += dec2bin(tamanhoMensagem,bits);
 }
 
 std::ostream &operator<<(std::ostream &os, QR &v) {

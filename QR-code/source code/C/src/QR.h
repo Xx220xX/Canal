@@ -16,6 +16,7 @@
 #define  M 2
 #define  Q 3
 #define  H 4
+
 enum {
     Msg_n_suport = 1, nivel_n_suportado, file_not_found
 } Error;
@@ -44,6 +45,8 @@ int codificar(pQR);
 void determinarMenorVersao(pQR);
 
 void indicadorModo(pQR);
+
+void contagemCaracteres(pQR);
 
 void ERROR_PRINT(int);
 

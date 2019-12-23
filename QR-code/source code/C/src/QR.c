@@ -1,5 +1,10 @@
 #include "QR.h"
 #include <math.h>
+int tabela_quantidade_caracteres[][3] = {{10, 12, 14},
+                                         {9,  11, 13},
+                                         {8,  16, 16},
+                                         {8,  10, 12}};
+void addletters(pQR qr, int bits);
 
 void ERROR_PRINT(int erro) {
     switch (erro) {
@@ -99,7 +104,7 @@ int codificar(QR *qr) {
         qr->error = 0;
         determinarMenorVersao(qr);
         indicadorModo(qr);
-//     contagem_de_caracteres(qr);
+        contagemCaracteres(qr);
 //     codificarDados(qr);
 //     qr->error dividir_em_blocos(qr);
         if (qr->error) {
@@ -151,9 +156,25 @@ void determinarMenorVersao(pQR q) {
 }
 
 void indicadorModo(pQR qr) {
-    qr->strbits = (char *)realloc(qr->strbits, 5);
+    qr->strbits = (char *) realloc(qr->strbits, 5);
     qr->size_strbits = 5;
     dec2bin(qr->strbits, pow(2, qr->modo_codificacao - 1), 4);
+}
+
+void contagemCaracteres(pQR qr) {
+    int bits = 0;
+    if (qr->versao >= 27)
+        bits = 2;
+    else if (qr->versao >= 10)
+        bits = 1;
+    bits = tabela_quantidade_caracteres[qr->modo_codificacao - 1][bits];
+    addletters(qr, bits);
+    dec2bin(qr->strbits + 4, qr->tamanhoMensagem, bits);
+}
+
+void addletters(pQR qr, int size) {
+    qr->strbits = (char *) realloc(qr->strbits, qr->size_strbits + size);
+    qr->size_strbits += size;
 }
 
 

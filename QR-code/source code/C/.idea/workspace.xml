@@ -12,27 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ccd4ec1-9151-4d88-8e53-741df4dbe856" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../etapas/2_codificacao/4_contagem_de_caracteres.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/QR.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/QR.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QR.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QR.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/src/QR.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/src/QR.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/cmake-build-debug/CMakeFiles/QR_CPP.dir/src/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cpp/src/QR.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/src/QR.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cpp/src/QR.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/src/QR.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cpp/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Cpp/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/src/QR.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/src/QR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +112,7 @@
       <workItem from="1573523057162" duration="5061000" />
       <workItem from="1574897847021" duration="5392000" />
       <workItem from="1577058093661" duration="2280000" />
+      <workItem from="1577077470206" duration="616000" />
     </task>
     <servers />
   </component>
@@ -137,21 +133,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1328" height="258" key="GridCell.Tab.0.bottom" timestamp="1577060405439">
+    <state width="1225" height="222" key="GridCell.Tab.0.bottom" timestamp="1577078086086">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1328" height="258" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1577060405439" />
-    <state width="1328" height="258" key="GridCell.Tab.0.center" timestamp="1577060405439">
+    <state width="1225" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1577078086086" />
+    <state width="1225" height="222" key="GridCell.Tab.0.center" timestamp="1577078086085">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1328" height="258" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1577060405439" />
-    <state width="1328" height="258" key="GridCell.Tab.0.left" timestamp="1577060405439">
+    <state width="1225" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1577078086085" />
+    <state width="1225" height="222" key="GridCell.Tab.0.left" timestamp="1577078086085">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1328" height="258" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1577060405439" />
-    <state width="1328" height="258" key="GridCell.Tab.0.right" timestamp="1577060405439">
+    <state width="1225" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1577078086085" />
+    <state width="1225" height="222" key="GridCell.Tab.0.right" timestamp="1577078086085">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1328" height="258" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1577060405439" />
+    <state width="1225" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1577078086085" />
+    <state x="330" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1577077718562">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="330" y="0" key="refactoring.ChangeSignatureDialog/0.0.1440.860@0.0.1440.860" timestamp="1577077718562" />
   </component>
 </project>

@@ -5,6 +5,7 @@ L = 1
 M = 2
 Q = 3
 H = 4
+tabela = {'quantidade de caracteres': [[10, 12, 14], [9, 11, 13], [8, 16, 16], [8, 10, 12]],}
 
 
 class QR_exception(Exception):
@@ -28,6 +29,7 @@ class QR:
         self.modo_correcao_forcado = forcar_modo_de_correcao
         self.modo_correcao = H
         self.versao = None
+        self.strbits = None
         # etapa 1-7 analise de dados
 
     def __repr__(self):
@@ -41,7 +43,7 @@ class QR:
         for c in self.msg:
             if c.isdigit():
                 continue
-            if 'A' <= c <= 'Z' or c in [' ','$','*','+','.','/']:
+            if 'A' <= c <= 'Z' or c in [' ', '$', '*', '+', '.', '/']:
                 self.modo_codificao = ALPHANUMERICO
                 continue
             self.modo_codificao = BYTE
@@ -53,7 +55,7 @@ class QR:
         try:
             self.determinarMenorVersao()
             self.indicadorModo()
-            # self.contagem_de_caracteres()
+            self.contagemCaracteres()
             # self.codificarDados()
             # self.dividir_em_blocos()
         except QR_exception as e:
@@ -78,3 +80,13 @@ class QR:
 
     def indicadorModo(self):
         self.strbits = dec2bin(2 ** (self.modo_codificao - 1), 4)
+
+    def contagemCaracteres(self):
+        if self.versao >= 27:
+            bits = 2
+        elif self.versao >= 10:
+            bits = 1
+        else:
+            bits = 0
+        bits = tabela['quantidade de caracteres'][self.modo_codificao][bits]
+        self.strbits = self.strbits + dec2bin(self.tamanho_da_mensagem, bits)
