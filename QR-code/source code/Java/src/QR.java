@@ -133,7 +133,6 @@ public class QR {
     }
 
     public void codificarDados() throws QRException {
-
         String part, bloco;
         int number = 0;
         StringBuilder s = new StringBuilder();
