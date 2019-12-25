@@ -1,10 +1,18 @@
 #include "QR.h"
 #include <math.h>
+
 int tabela_quantidade_caracteres[][3] = {{10, 12, 14},
                                          {9,  11, 13},
                                          {8,  16, 16},
                                          {8,  10, 12}};
+
 void addletters(pQR qr, int bits);
+
+void codificarNumerico(pQR qr);
+
+void codificarByte(pQR qr);
+
+void codificarAlphaumerico(pQR qr);
 
 void ERROR_PRINT(int erro) {
     switch (erro) {
@@ -105,7 +113,7 @@ int codificar(QR *qr) {
         determinarMenorVersao(qr);
         indicadorModo(qr);
         contagemCaracteres(qr);
-//     codificarDados(qr);
+        codificarDados(qr);
 //     qr->error dividir_em_blocos(qr);
         if (qr->error) {
             if (!qr->modo_corecao_forcado && qr->modo_correcao > L) {
@@ -171,6 +179,81 @@ void contagemCaracteres(pQR qr) {
     addletters(qr, bits);
     dec2bin(qr->strbits + 4, qr->tamanhoMensagem, bits);
 }
+
+void codificarDados(pQR qr) {
+    if (qr->modo_codificacao == NUMERICO) {
+        codificarNumerico(qr);
+    } else if (qr->modo_codificacao == ALPHANUMERICO) {
+        codificarAlphaumerico(qr);
+    } else if (qr->modo_codificacao == BYTE) {
+        codificarByte(qr);
+    }
+}
+
+void codificarNumerico(pQR qr) {
+    int i = 0, number, bits;
+    char grupo[4], bloco[11];
+    for (; i < qr->tamanhoMensagem; i += 3) {
+        snprintf(grupo, 4, "%s", qr->msg + i);
+        number = atoi(grupo);
+        bits = number < 10 ? 4 : number < 100 ? 7 : 10;
+        dec2bin(bloco, number, bits);
+        addletters(qr, bits);
+        strcat(qr->strbits, bloco);
+    }
+}
+
+int convert(char c) {
+    if (c <= '9' && c >= '0')
+        return c - '0';
+    if (c <= 'Z' && c >= 'A')
+        return c - 'A' + 10;
+    if (c == ' ')return 36;
+    else if (c == '$')
+        return 37;
+    else if (c == '%')
+        return 38;
+    else if (c == '*')
+        return 39;
+    else if (c == '+')
+        return 40;
+    else if (c == '-')
+        return 41;
+    else if (c == '.')
+        return 42;
+    else if (c == '/')
+        return 43;
+    else if (c == ':')
+        return 44;
+}
+
+void codificarAlphaumerico(pQR qr) {
+    int i, number;
+    char bloco[12];
+    for (i = 0; i < qr->tamanhoMensagem; i += 2) {
+        if (qr->msg[i + 1]) {
+            number = convert(qr->msg[i]) * 45 + convert(qr->msg[i + 1]);
+            dec2bin(bloco, number, 11);
+            addletters(qr,11);
+        } else{
+            number = convert(qr->msg[i]);
+            dec2bin(bloco, number, 6);
+            addletters(qr,6);
+        }
+        strcat(qr->strbits,bloco);
+    }
+}
+
+void codificarByte(pQR qr) {
+    char *c;
+    char bloco[9];
+    for(c = qr->msg;*c;c+=1){
+        dec2bin(bloco,*c,8);
+        addletters(qr,8);
+        strcat(qr->strbits,bloco);
+    }
+}
+
 
 void addletters(pQR qr, int size) {
     qr->strbits = (char *) realloc(qr->strbits, qr->size_strbits + size);

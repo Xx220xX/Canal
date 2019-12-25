@@ -44,7 +44,7 @@ void QR::codificar() {
         determinarMenorVersao();
         indicadorModo();
         contagemCaracteres();
-//     codificarDados();
+        codificarDados();
 //     this->error dividir_em_blocos();
         if (this->error) {
             if (!this->tentar_todos_modos_de_correcao && this->modo_correcao > L) {
@@ -105,14 +105,70 @@ string dec2bin(int number, int bits) {
 void QR::indicadorModo() {
     strbits = dec2bin(pow(2, modo_codificacao - 1), 4);
 }
+
 void QR::contagemCaracteres() {
     int bits = 0;
-    if(versao >=27)
+    if (versao >= 27)
         bits = 2;
-    else if (versao>=10)
+    else if (versao >= 10)
         bits = 1;
-    bits = tabela_quantidade_caracteres[modo_codificacao-1][bits];
-    strbits += dec2bin(tamanhoMensagem,bits);
+    bits = tabela_quantidade_caracteres[modo_codificacao - 1][bits];
+    strbits += dec2bin(tamanhoMensagem, bits);
+}
+
+int convert(char c) {
+    if (c <= '9' && c >= '0')
+        return c - '0';
+    if (c <= 'Z' && c >= 'A')
+        return c - 'A' + 10;
+    if (c == ' ')return 36;
+    else if (c == '$')
+        return 37;
+    else if (c == '%')
+        return 38;
+    else if (c == '*')
+        return 39;
+    else if (c == '+')
+        return 40;
+    else if (c == '-')
+        return 41;
+    else if (c == '.')
+        return 42;
+    else if (c == '/')
+        return 43;
+    else if (c == ':')
+        return 44;
+}
+
+void QR::codificarDados() {
+    string part, bloco;
+    int number;
+    if (modo_codificacao == NUMERICO) {
+        for (int i = 0; i < tamanhoMensagem; i += 3) {
+            part = msg.substr(i, i + 3);
+            number = stoi(part);
+            bloco = dec2bin(number, number < 10 ? 4 : number < 100 ? 7 : 10);
+            strbits += bloco;
+        }
+    } else if (modo_codificacao == ALPHANUMERICO) {
+        for (int i = 0; i < tamanhoMensagem; i += 2) {
+            part = msg.substr(i, i + 2);
+            if (part.length() == 1) {
+                number = convert(part[0]);
+                bloco = dec2bin(number, 6);
+            } else {
+                number = convert(part[0]) * 45 + convert(part[1]);
+                bloco = dec2bin(number, 11);
+            }
+            strbits += bloco;
+        }
+    } else if (modo_codificacao == BYTE) {
+        for (int i = 0; i < tamanhoMensagem; i ++) {
+            bloco = dec2bin(msg[i], 8);
+            cout<<msg[i]<<' '<<bloco<<endl;
+            strbits += bloco;
+        }
+    }
 }
 
 std::ostream &operator<<(std::ostream &os, QR &v) {

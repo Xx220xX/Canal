@@ -56,7 +56,7 @@ class QR:
             self.determinarMenorVersao()
             self.indicadorModo()
             self.contagemCaracteres()
-            # self.codificarDados()
+            self.codificarDados()
             # self.dividir_em_blocos()
         except QR_exception as e:
             if self.modo_correcao_forcado and self.modo_correcao > L:
@@ -90,3 +90,46 @@ class QR:
             bits = 0
         bits = tabela['quantidade de caracteres'][self.modo_codificao][bits]
         self.strbits = self.strbits + dec2bin(self.tamanho_da_mensagem, bits)
+
+    def codificarDados(self):
+        if self.modo_codificao == NUMERICO:
+            self.codificarNumerico()
+        elif self.modo_codificao == ALPHANUMERICO:
+            self.codificarAlphaumerico()
+        elif self.modo_codificao == BYTE:
+            self.codificarByte()
+
+    def codificarNumerico(self):
+        i = 0
+        while i < self.tamanho_da_mensagem:
+            number = int(self.msg[i:i + 3])
+            bloco = dec2bin(number, number < 10 and 4 or number < 100 and 7 or 10)
+            self.strbits += bloco
+            i += 3
+
+    def codificarAlphaumerico(self):
+        def converter(c):
+            if '0' < c < '9':
+                return int(c)
+            if 'A' < c < 'Z':
+                return ord(c) - ord('A') + 10
+            return {' ': 36, '$': 37, '%': 38, '*': 39, '+': 40, '-': 41, '.': 42, '/': 43, ':': 44}[c]
+
+        i = 0
+        while i < self.tamanho_da_mensagem:
+            dupla = self.msg[i:i + 2]
+            print(f'"{dupla}"',end=' -> ')
+            if len(dupla) == 1:
+                number = converter(dupla)
+                bloco = dec2bin(number, 6)
+            else:
+                number = converter(dupla[0]) * 45 + converter(dupla[1])
+                bloco = dec2bin(number, 11)
+            print(bloco)
+            self.strbits += bloco
+            i += 2
+
+    def codificarByte(self):
+        for c in self.msg:
+            bloco = dec2bin(ord(c), 8)
+            self.strbits += bloco

@@ -32,6 +32,7 @@ public:
     void determinarMenorVersao();
     void indicadorModo();
     void contagemCaracteres();
+    void codificarDados();
     friend std::ostream &operator<<(std::ostream &os, QR &v);
 };
 #endif //QR_CPP_QR_H

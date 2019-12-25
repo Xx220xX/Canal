@@ -43,8 +43,8 @@ class QR{
            this.determinarMenorVersao();
             this.indicadorModo()
             this.contagemCaracteres()
-          /*  this.codificarDados()
-            this.dividir_em_blocos()*/
+            this.codificarDados()
+          /*  this.dividir_em_blocos()*/
         } catch(e) {
             if (!this.modo_correcao_forcado && this.modo_correcao > L){
                 this.modo_correcao -= 1;
@@ -72,6 +72,52 @@ class QR{
     contagemCaracteres(){
        this.strbits+= dec2bin(this.msg.length,tabela.quantidadeCaracteres[this.modo_codificacao][this.versao>=27?2:this.versao>=10?1:0]);
     }
+    codificarDados(){
+ 		let convert = (c)=>{
+ 			if (c <= '9' && c >= '0')
+        		return parseInt(c);
+    		if (c.charCodeAt(0) <= 'Z'.charCodeAt(0) && c.charCodeAt(0) >= 'A'.charCodeAt(0))
+        		return c.charCodeAt(0) - 'A'.charCodeAt(0) + 10;
+        	return {' ': 36, '$': 37, '%': 38, '*': 39, '+': 40, '-': 41, '.': 42, '/': 43, ':': 44}[c];	
+    	};
+    	let part,number,bloco;
+    	let sub = (str,begin,finish)=>{
+    		let ans = '';
+    		for(let i = begin; i<str.length&& i<finish; i++){
+    			ans+=str[i];
+    		}
+    		return ans;
+    	};
+    	if(this.modo_codificacao==NUMERICO){
+    		for (let i=0;i<this.msg.length;i+=3){
+    			part = sub(this.msg,i,i+3);
+    			print(part);
+    			number = parseInt(part);
+    			bloco = dec2bin(number, number<10?4:number<100?7:10);
+    			this.strbits+=bloco;
+    		}
+    	}else if(this.modo_codificacao==ALPHANUMERICO){
+    		for (let i=0;i<this.msg.length;i+=2){
+    			part = sub(this.msg,i,i+2);
+    			if (part.length == 1){
+    				number = convert(part.charAt(0))
+    				bloco = dec2bin(number, 6);	
+    			}else{
+    				number = convert(part.charAt(0))*45+convert(part.charAt(1))
+    				bloco = dec2bin(number, 11);	
+    			}  
+    			
+    			this.strbits+=bloco;
+    		}
+    	}else if(this.modo_codificacao == BYTE){
+    		for(let i=0;i<this.msg.length;i++){
+    			number = this.msg.charCodeAt(i);
+    			bloco = dec2bin(number, 8);
+    			print(this.msg.charAt(i)+' '+bloco)
+    			this.strbits+=bloco;
+    		}
+    	}
+    }
 }
 
 function dec2bin(number,bits){
@@ -82,7 +128,7 @@ function dec2bin(number,bits){
     }
     return ans;
 }
-let q = new QR('15151');
+let q = new QR('ola mans');
 q.analise();
 q.codificar();
 print(q)
