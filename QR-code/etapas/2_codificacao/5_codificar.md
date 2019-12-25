@@ -8,8 +8,7 @@
 ####  Algoritimo
  
 ```python
-    concatenar a strbits com o binario gerado do numero 
-        de caracteres contido na mensagem
+    concatenar a strbits com o binario gerado 
 ```
 
 
