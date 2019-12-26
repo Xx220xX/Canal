@@ -1,4 +1,4 @@
-# Dividir em blocos :/
+# Completar string de bits
 
 > - Deve-se encontrar o numero de palavras chaves que o qr terá. Para isso deve-se consultar a [tabela ](table.md).
 > > você pode pegar a tabela em formato de matriz [aqui](tablematriz.md)
@@ -12,8 +12,13 @@
 
 ####  Algoritimo
  
-```python
-    concatenar a strbits com o binario gerado 
+```Fortran
+    Enquanto modulo por 8 do tamanho da string de bits diferente de zero faça
+       string de bits <-- string de bits concatenado com "0"
+    Enquanto tamanho da string de bits somado 16 menor ou igual ao numero de palavras vezes 8 faça
+       string de bits <-- string de bits concatenado com "1110110000010001"
+    Se  tamanho da string de bits menor que o  numero de palavras vezes 8 faça
+       string de bits <-- string de bits concatenado com "11101100"
 ```
 
 # linguagem C
