@@ -4,4 +4,4 @@
 - [x] [Indicador de Modo](3_indicador_de_modo.md) [[you tube]](https://youtu.be/WEVxzWc5WH0)
 - [x] [Contagem de caracteres](4_contagem_de_caracteres.md) [[you tube]](https://youtu.be/xjuGtlacGRs)
 - [x] [Codificar](5_codificar.md) [[you tube]](https://youtu.be/yy22ptKYbvo)
-- [ ] [Dividir palavras e em blocos se necessario](6_dividir_em_blocos.md)
+- [ ] [completar Strings de bits](6_dividir_em_blocos.md)
