@@ -12,13 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ccd4ec1-9151-4d88-8e53-741df4dbe856" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/QR.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/QR.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QR_C.dir/src/main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QR.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QR.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/QR.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/java/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/java/QR$QRException$MODO_CORRECAO_NAO_SUPORTADO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/java/QR$QRException$MODO_CORRECAO_NAO_SUPORTADO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/java/QR$QRException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/java/QR$QRException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/java/QR$Tabela.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/java/QR$Tabela.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/java/QR.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/java/QR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/QR.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/QR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lua/src/QR.lua" beforeDir="false" afterPath="$PROJECT_DIR$/../Lua/src/QR.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lua/src/log.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Lua/src/log.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../python/src/QR.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python/src/QR.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +112,7 @@
       <workItem from="1577058093661" duration="2280000" />
       <workItem from="1577077470206" duration="616000" />
       <workItem from="1577153217964" duration="1668000" />
+      <workItem from="1577378450540" duration="1431000" />
     </task>
     <servers />
   </component>
@@ -126,22 +133,26 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1385" height="222" key="GridCell.Tab.0.bottom" timestamp="1577154898882">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1385" height="235" key="GridCell.Tab.0.bottom" timestamp="1577378870678">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1385" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1577154898882" />
-    <state width="1385" height="222" key="GridCell.Tab.0.center" timestamp="1577154898882">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1385" height="235" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577378870678" />
+    <state width="1385" height="235" key="GridCell.Tab.0.center" timestamp="1577378870678">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1385" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1577154898882" />
-    <state width="1385" height="222" key="GridCell.Tab.0.left" timestamp="1577154898882">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1385" height="235" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577378870678" />
+    <state width="1385" height="235" key="GridCell.Tab.0.left" timestamp="1577378870677">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1385" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1577154898882" />
-    <state width="1385" height="222" key="GridCell.Tab.0.right" timestamp="1577154898882">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1385" height="235" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577378870677" />
+    <state width="1385" height="235" key="GridCell.Tab.0.right" timestamp="1577378870678">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1385" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1577154898882" />
+    <state width="1385" height="235" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577378870678" />
     <state x="330" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1577153415444">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

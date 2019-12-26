@@ -48,6 +48,7 @@ void indicadorModo(pQR);
 
 void contagemCaracteres(pQR);
 void codificarDados(pQR);
+void completaBits(pQR);
 void ERROR_PRINT(int);
 
 void QR_info(pQR);

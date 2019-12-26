@@ -4,6 +4,5 @@ public class Main {
         qr.analise();
         qr.codificacao();
         System.out.println(qr);
-
     }
 }

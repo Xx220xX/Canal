@@ -6,7 +6,7 @@ int tabela_quantidade_caracteres[][3] = {{10, 12, 14},
                                          {8,  16, 16},
                                          {8,  10, 12}};
 
-void addletters(pQR qr, int bits);
+void expandSize(pQR qr, int bits);
 
 void codificarNumerico(pQR qr);
 
@@ -64,22 +64,8 @@ void QR_info(pQR q) {
             printf("error: modo de codificacao nao definido");
     }
     printf("\ncorrecao: ");
-    switch (q->modo_correcao) {
-        case L:
-            printf("L");
-            break;
-        case M:
-            printf("M");
-            break;
-        case Q:
-            printf("Q.txt");
-            break;
-        case H:
-            printf("H");
-            break;
-        default:
-            printf("Ainda nao definido");
-    }
+    char *modos= "LMQH?";
+    printf("%c",modos[q->modo_correcao-1]);
     printf("\n");
     printf("Versao: %d\n", q->versao);
     printf("capacidade de caracteres: %d\n", q->capacidadeCaracteres);
@@ -106,7 +92,6 @@ void analise(pQR qr) {
 int codificar(QR *qr) {
     if (!qr->modo_corecao_forcado) {
         qr->modo_correcao = H;
-
     }
     while (qr->modo_correcao >= L) {
         qr->error = 0;
@@ -114,7 +99,7 @@ int codificar(QR *qr) {
         indicadorModo(qr);
         contagemCaracteres(qr);
         codificarDados(qr);
-//     qr->error dividir_em_blocos(qr);
+        completaBits(qr);
         if (qr->error) {
             if (!qr->modo_corecao_forcado && qr->modo_correcao > L) {
                 qr->modo_correcao--;
@@ -131,21 +116,10 @@ int codificar(QR *qr) {
 void determinarMenorVersao(pQR q) {
     FILE *tabela = 0;
     int caracteres[4];
+    char file[] = "../src/tabelas/versoes/H.txt";
+    file[23]= "LMQH"[q->modo_correcao];
     int i;
-    switch (q->modo_correcao) {
-        case H:
-            tabela = fopen("../src/tabelas/versoes/H.txt", "r");
-            break;
-        case Q:
-            tabela = fopen("../src/tabelas/versoes/Q.txt", "r");
-            break;
-        case M:
-            tabela = fopen("../src/tabelas/versoes/M.txt", "r");
-            break;
-        case L:
-            tabela = fopen("../src/tabelas/versoes/L.txt", "r");
-            break;
-    }
+    tabela = fopen(file, "r");
     if (!tabela) {
         q->error = file_not_found;
         return;
@@ -166,7 +140,7 @@ void determinarMenorVersao(pQR q) {
 void indicadorModo(pQR qr) {
     qr->strbits = (char *) realloc(qr->strbits, 5);
     qr->size_strbits = 5;
-    dec2bin(qr->strbits, pow(2, qr->modo_codificacao - 1), 4);
+    dec2bin(qr->strbits, (int)pow(2, qr->modo_codificacao - 1), 4);
 }
 
 void contagemCaracteres(pQR qr) {
@@ -176,7 +150,7 @@ void contagemCaracteres(pQR qr) {
     else if (qr->versao >= 10)
         bits = 1;
     bits = tabela_quantidade_caracteres[qr->modo_codificacao - 1][bits];
-    addletters(qr, bits);
+    expandSize(qr, bits);
     dec2bin(qr->strbits + 4, qr->tamanhoMensagem, bits);
 }
 
@@ -198,9 +172,12 @@ void codificarNumerico(pQR qr) {
         number = atoi(grupo);
         bits = number < 10 ? 4 : number < 100 ? 7 : 10;
         dec2bin(bloco, number, bits);
-        addletters(qr, bits);
+        expandSize(qr, bits);
         strcat(qr->strbits, bloco);
     }
+}
+void completaBits(pQR qr){
+
 }
 
 int convert(char c) {
@@ -234,11 +211,11 @@ void codificarAlphaumerico(pQR qr) {
         if (qr->msg[i + 1]) {
             number = convert(qr->msg[i]) * 45 + convert(qr->msg[i + 1]);
             dec2bin(bloco, number, 11);
-            addletters(qr,11);
+            expandSize(qr, 11);
         } else{
             number = convert(qr->msg[i]);
             dec2bin(bloco, number, 6);
-            addletters(qr,6);
+            expandSize(qr, 6);
         }
         strcat(qr->strbits,bloco);
     }
@@ -249,15 +226,16 @@ void codificarByte(pQR qr) {
     char bloco[9];
     for(c = qr->msg;*c;c+=1){
         dec2bin(bloco,*c,8);
-        addletters(qr,8);
+        expandSize(qr, 8);
         strcat(qr->strbits,bloco);
     }
 }
 
 
-void addletters(pQR qr, int size) {
-    qr->strbits = (char *) realloc(qr->strbits, qr->size_strbits + size);
-    qr->size_strbits += size;
+void
+expandSize(pQR qr, int bits){
+    qr->strbits = (char *) realloc(qr->strbits, qr->size_strbits + bits);
+    qr->size_strbits += bits;
 }
 
 
