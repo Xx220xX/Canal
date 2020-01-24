@@ -1,8 +1,9 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include "QR.h"
 
+
 int main() {
-    QR qr = QR_new("HELLO WOLRD,");
+    QR qr = QR_new("HELLO WOLRD");
 //    QR qr = QR_new("HELLO WOLRD");
     pQR p_qr = &qr;
 
@@ -11,6 +12,8 @@ int main() {
 
     QR_info(p_qr);
     QR_free(p_qr);
-
+    
     return 0;
 }
+
+#include "QR.c"

@@ -1,8 +1,9 @@
-#include <iostream>
+﻿#include <iostream>
 
 using namespace std;
 
 #include "QR.h"
+#include "QR.cpp"
 
 int main() {
     QR q = QR("HELLO WORLD,");

@@ -1,4 +1,4 @@
-
+﻿
 #ifndef QR_C_QR_H
 #define QR_C_QR_H
 
@@ -30,6 +30,7 @@ typedef struct {
 
     int tamanhoMensagem, size_strbits;
     int capacidadeCaracteres;
+    int numeroPalavras;
     int versao;
 
 } QR, *pQR;
@@ -43,12 +44,13 @@ void analise(pQR);
 int codificar(pQR);
 
 void determinarMenorVersao(pQR);
-
 void indicadorModo(pQR);
-
 void contagemCaracteres(pQR);
 void codificarDados(pQR);
 void completaBits(pQR);
+
+
+void codigosCorretores(pQR);
 void ERROR_PRINT(int);
 
 void QR_info(pQR);
